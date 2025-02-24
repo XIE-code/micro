@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.parent-web{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+/* 头部盒子 */
+.parent-web .head_box{
+    width: 100%;
+    height: 12%;
+    position: relative;
+
+}
+
+/* 头部左边盒子 */
+.parent-web .head_box .head_left_box{
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    text-align: center;
+    left: 40px;
+    margin: 20px auto;
+}
+/* 可以添加一些动画效果进行美化 */
+img:hover{
+    transform: scale(1.15); /* 鼠标悬停时放大 */
+    transition: transform 0.3s ease-in-out; /* 平滑过渡效果 */
+  }
+.parent-web .head_box .head_left_box .left_image{
+    padding-top: 1px;
+    padding-left: 0;
+    width: 40px;
+    height: 40px;
+    left: 0;
+    position: absolute;
+}
+.parent-web .head_box .head_left_box .left_image img{
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+}
+.parent-web .head_box .head_left_box .left_text{
+    margin-left: 25px;
+    width: 149px;
+    height: 60px;
+    font-family: Roboto, Roboto;
+    font-weight: bold;
+    font-size: 24px;
+    color: #000000;
+    line-height: 40px;
+    text-align: left;
+    font-style: normal;
+    text-transform: none;
+    position: relative;
+}
+/* 头部右边盒子 */
+.parent-web .head_box .head_right_box{
+    right: 40px;
+    top: 20px;
+    width: 700px;
+    height: 60px;
+    position: absolute;
+}
+/* 搜索框 */
+.parent-web .head_box .head_right_box .query_box{
+    margin-right: 200px;
+    width: 400px;
+    height: 60px;
+    border-radius: 15px;
+    border: 1px #EDF1F7 solid;
+    display: inline-block;
+}
+.parent-web .head_box .head_right_box .query_box .query_image{
+    left: 15px;
+    width: 30px;
+    height: 60px;
+    position:absolute;
+}
+.parent-web .head_box .head_right_box .query_box .query_image img{
+    margin-left: 54px;
+    margin-top: 19px;
+}
+.parent-web .head_box .head_right_box .query_box input{
+    width: 345px;
+    height: 58px;
+    margin-left: 50px;
+    position: relative;
+    border: 0;
+    outline:none;
+    background-color: transparent;
+    font-size: 20px;
+    font-family: Noto Sans SC, Noto Sans SC;
+    color: black;
+}
+/* 用户信息盒子 */
+.parent-web .head_box .head_right_box .user_box{
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 60px;
+    position: absolute;
+}
+.parent-web .head_box .head_right_box .user_box .head_image{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+
+}
+.parent-web .head_box .head_right_box .user_box .head_image img{
+    left: 0;
+    width: 28%;
+    height: 84%;
+    border-radius: 30px;
+    position: absolute;
+}
+.parent-web .head_box .head_right_box .user_box .user_text{
+
+    top: 0;
+    right: 50px;
+    line-height: 60px;
+    font-size: 24px;
+    color: #F6453D;
+    position: absolute;
+}
+/* 主体内容盒子 */
+.parent-web .body_box{
+    width: 100%;
+    flex: 1;
+    display: flex;
+}
+/* 主题内容左边盒子 */
+.parent-web .body_box .body_left_box{
+    margin-left: 0;
+    width: 9%;
+    height: 100%;
+    background-color: #F6453D;
+}
+.parent-web .body_box .body_left_box .choose_box{
+    width: 100%;
+    height: 150px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 100px; /* 添加间距 */
+}
+.parent-web .body_box .body_left_box .choose_box .choose_image_box{
+    width: 64px;
+    height: 67px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 垂直居中 */
+    align-items: center; /* 水平居中 */
+
+}
+.parent-web .body_box .body_left_box .choose_box .choose_image_box .choose_text{
+    text-align: center;
+}
+.parent-web .body_box .body_left_box .choose_box .choose_image_box img{
+    width: 60%;
+    height: 60%;
+
+
+}
+/* 主体内容右边盒子 */
+.parent-web .body_box .body_right_box{
+    width: 91%;
+    height: 100%;
+    background-color: #f7f9fc;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+/* 主体内容右边盒子的头部盒子 */
+.parent-web .body_box .body_right_box .body_right_head_box{
+    width: 100%;
+    height: 40px;
+    padding-left: 40px;
+    background-color: #ffffff;
+    display: flex; /* 使用 Flexbox 布局 */
+    align-items: center; /* 垂直居中 */
+    border-bottom: 1px #eff2f8 solid;
+}
+.parent-web .body_box .body_right_box .body_right_head_box .body_right_head_text_box{
+    margin-left: 7px;
+    margin-right: 35px;
+    width: 96px;
+    height: 40px;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #8F9BB3;
+    line-height: 40px;
+    text-align: center;
+    text-align: left;
+    font-style: normal;
+    text-transform: none;
+}
+.parent-web .body_box .body_right_box .body_right_head_box .body_right_head_text_box:nth-child(1){
+    margin-left: 0;
+}
+.parent-web .body_box .body_right_box .body_right_content_box{
+    display: flex;
+    flex-direction:column;
+    flex-grow: 1;
+    
+}
+/* 首页盒子的样式 */
+.choose_text {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 52px;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+@media (max-width: 1000px) {
+   .parent-web .head_box {
+     display: none;
+   }
+    }
+    @media (max-height: 500px) {
+     .parent-web .head_box {
+        display: none;
+     }
+    }
+    
